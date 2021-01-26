@@ -25,11 +25,11 @@ Scala 2.12  - [kafka_2.12-2.7.0.tgz](https://apache.mirror.digitalpacific.com.au
 ### save and close
 ## 4.Start the zookeeper service 
     .\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
-![text](https://link)
+![text]()
 > Open new windows powerShell in c:\ kafka\kafka_2.12-2.7.0
 ## 5.Start the kafka service
     .\bin\windows\kafka-server-start.bat .\config\server.properties
-![text](https://link)    
+![text](https://github.com/sada498/kafka-java-mariadb-redis/blob/main/img/kafka.JPG)    
 ## 6. To check all topics are created in kafka
     .\bin\windows\kafka-topics.bat --list --zookeeper localhost:2181   
   

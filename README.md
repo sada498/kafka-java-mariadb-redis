@@ -25,7 +25,7 @@ Scala 2.12  - [kafka_2.12-2.7.0.tgz](https://apache.mirror.digitalpacific.com.au
 ### save and close
 ## 4.Start the zookeeper service 
     .\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
-![text]()
+![text](https://github.com/sada498/kafka-java-mariadb-redis/blob/main/img/zookeeper.JPG)
 > Open new windows powerShell in c:\ kafka\kafka_2.12-2.7.0
 ## 5.Start the kafka service
     .\bin\windows\kafka-server-start.bat .\config\server.properties

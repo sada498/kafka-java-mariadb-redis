@@ -111,8 +111,8 @@ Scala 2.12  - [kafka_2.12-2.7.0.tgz](https://apache.mirror.digitalpacific.com.au
 
 run StreamingAnalytics class.
 
-output
-![]()
+**output**
+![](https://github.com/sada498/kafka-java-mariadb-redis/blob/main/img/output.JPG)
 
 Done! :)
 

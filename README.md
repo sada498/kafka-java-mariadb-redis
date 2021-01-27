@@ -56,7 +56,24 @@ Scala 2.12  - [kafka_2.12-2.7.0.tgz](https://apache.mirror.digitalpacific.com.au
     ./bin/kafka-server-start.sh ./config/server.properties > ./logs/start_kafka.log &
 ## 5. Check the kafka running
     ps -ef|grep kafka
+# create topic 
+>windows
+
+    cd Kafka\kafka_2.12-2.7.0\
+    .\bin\windows\kafka-topics.bat  --zookeeper localhost:2181  --create  --topic streaming.orders.input  --partitions 1   --replication-factor 1
+
+>other mac or Linux
+
+    ./bin/kafka-topics.sh \
+        --zookeeper localhost:2181 \
+        --create \
+        --topic streaming.orders.input \
+        --partitions 1 \
+        --replication-factor 1
+        
 # Docker install and config
+> Install a docker on your local machine 
+[Docker install](https://docs.docker.com/get-docker/)
 ## 1. Docker mariadb setup
     docker run  --name streaming-mariadb `
                  -v c:/mariadb:/var/lib/mysql `
@@ -87,5 +104,16 @@ Scala 2.12  - [kafka_2.12-2.7.0.tgz](https://apache.mirror.digitalpacific.com.au
     
     grant all on streaming.order_summary to 'streaming'@'%';
     
-> before you run you pro
+> before you run the application make sure below services running on your local machine or server
+1. Zookeeper
+2. Kafka
+3. Mariadb on docker containers
+
+run StreamingAnalytics class.
+
+output
+![]()
+
+Done! :)
+
 

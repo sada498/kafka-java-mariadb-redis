@@ -86,4 +86,6 @@ Scala 2.12  - [kafka_2.12-2.7.0.tgz](https://apache.mirror.digitalpacific.com.au
     ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
     
     grant all on streaming.order_summary to 'streaming'@'%';
+    
+> before you run you pro
 

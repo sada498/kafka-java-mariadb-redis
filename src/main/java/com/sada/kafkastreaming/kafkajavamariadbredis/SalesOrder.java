@@ -6,15 +6,6 @@ public class SalesOrder {
     int quantity;
     double price;
 
-    @Override
-    public String toString() {
-        return "SalesOrder{" +
-                "orderId=" + orderId +
-                ", product='" + product + '\'' +
-                ", quantity=" + quantity +
-                ", price=" + price +
-                '}';
-    }
 
     public int getOrderId() {
         return orderId;
@@ -47,5 +38,15 @@ public class SalesOrder {
     public void setPrice(double price) {
         this.price = price;
     }
+    @Override
+    public String toString() {
+        return "SalesOrder{" +
+                "orderId=" + orderId +
+                ", product='" + product + '\'' +
+                ", quantity=" + quantity +
+                ", price=" + price +
+                '}';
+    }
+
 
 }

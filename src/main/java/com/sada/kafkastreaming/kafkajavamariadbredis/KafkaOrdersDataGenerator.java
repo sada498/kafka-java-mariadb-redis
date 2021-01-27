@@ -54,15 +54,23 @@ public class KafkaOrdersDataGenerator implements Runnable {
 
             //Define list of Products
             List<String> products = new ArrayList<String>();
-            products.add("Keyboard");
+            products.add("Lenovo Laptop");
             products.add("Mouse");
             products.add("Monitor");
+            products.add("Samsung Monitor");
+            products.add("ThinkPad Dock pro");
+            products.add("Keyboard");
+            products.add("Work chair");
 
             //Define list of Prices. Matches the corresponding products
             List<Double> prices = new ArrayList<Double>();
-            prices.add(25.00);
+            prices.add(2500.00);
             prices.add(10.5);
             prices.add(140.00);
+            prices.add(250.00);
+            prices.add(289.00);
+            prices.add(50.00);
+            prices.add(199.00);
 
             //Define a random number generator
             Random random = new Random();

@@ -27,13 +27,14 @@ public class MariaDBManager implements Runnable, Serializable {
         System.out.println("Starting MariaDB DB Manager");
         MariaDBManager sqldbm = new MariaDBManager();
         sqldbm.setUp();
-        sqldbm.insertSummary("2020-08-20 00:00:00","Mouse",46.00);
+        sqldbm.insertSummary("2021-01-27 00:00:00","Mouse",10.00);
         sqldbm.run();
     }
 
     public void setUp() {
         System.out.println("Setting up MariaDB Connection");
-        String url = "jdbc:mysql://localhost:3307/streaming";
+        String url = "jdbc:mysql://192.168.15.6:3306/streaming";
+        //String url = "jdbc:mysql://localhost.6:3306/streaming";
         try {
             conn = DriverManager.getConnection(url,"streaming","streaming");
         }

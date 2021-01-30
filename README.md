@@ -66,6 +66,7 @@ Scala 2.12  - [kafka_2.12-2.7.0.tgz](https://apache.mirror.digitalpacific.com.au
 </p>
 
 </details>
+
 # create topic 
 >windows
 

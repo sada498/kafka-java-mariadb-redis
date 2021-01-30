@@ -2,6 +2,7 @@
 
 <details><summary>windows</summary>
 <p>
+    
 # Kafka download for Windows 
 ## 1. Create a Kafka directory.
 
@@ -39,6 +40,7 @@ Scala 2.12  - [kafka_2.12-2.7.0.tgz](https://apache.mirror.digitalpacific.com.au
 </details> 
 <details><summary>Ubuntu or Mac</summary>
 <p>
+    
 # kafka download for Ubuntu or Mac 
     mkdir kafka
     cd kafka

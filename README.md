@@ -1,5 +1,7 @@
 # kafka-java-mariadb-redis
- 
+
+<details><summary>windows</summary>
+<p>
 # Kafka download for Windows 
 ## 1. Create a Kafka directory.
 
@@ -32,8 +34,11 @@ Scala 2.12  - [kafka_2.12-2.7.0.tgz](https://apache.mirror.digitalpacific.com.au
 ![text](https://github.com/sada498/kafka-java-mariadb-redis/blob/main/img/kafka.JPG)    
 ## 6. To check all topics are created in kafka
     .\bin\windows\kafka-topics.bat --list --zookeeper localhost:2181   
-  
+ </p>
 
+</details> 
+<details><summary>Ubuntu or Mac</summary>
+<p>
 # kafka download for Ubuntu or Mac 
     mkdir kafka
     cd kafka
@@ -56,6 +61,9 @@ Scala 2.12  - [kafka_2.12-2.7.0.tgz](https://apache.mirror.digitalpacific.com.au
     ./bin/kafka-server-start.sh ./config/server.properties > ./logs/start_kafka.log &
 ## 5. Check the kafka running
     ps -ef|grep kafka
+</p>
+
+</details>
 # create topic 
 >windows
 
@@ -70,7 +78,7 @@ Scala 2.12  - [kafka_2.12-2.7.0.tgz](https://apache.mirror.digitalpacific.com.au
         --topic streaming.orders.input \
         --partitions 1 \
         --replication-factor 1
-        
+
 # Docker install and config
 > Install a docker on your local machine 
 [Docker install](https://docs.docker.com/get-docker/)
